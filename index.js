@@ -4,6 +4,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 // let genPas = document.getElementById("gen_pas")
 // let pasLength = document.getElementById("pas_length_input")
 let newPas = ""
+let tempstr = ""
 let pas1 = document.getElementById("p1")
 let pas2 = document.getElementById("p2")
 
@@ -25,9 +26,15 @@ function genRandPas(){
 function toclip(a){
     if (a===1){
         navigator.clipboard.writeText(pas1.textContent);
+        tempstr = pas1.textContent;
+        pas1.textContent = "Copied!"
+        setTimeout(pas1.textContent = tempstr,2000)
     }
     else if (a==2){
         navigator.clipboard.writeText(pas2.textContent);
+        tempstr = pas2.textContent;
+        pas2.textContent = "Copied!"
+        setTimeout(pas2.textContent = tempstr,2000)
     }
     // alert("Copied to clipboard");
 }
