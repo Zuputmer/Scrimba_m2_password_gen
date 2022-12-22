@@ -27,7 +27,7 @@ function toclip(a){
         navigator.clipboard.writeText(pas1.textContent);
     }
     else if (a==2){
-        navigator.clipboard.writeText(pas2);
+        navigator.clipboard.writeText(pas2.textContent);
     }
     // alert("Copied to clipboard");
 }
