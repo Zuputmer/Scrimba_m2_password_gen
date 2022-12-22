@@ -8,6 +8,8 @@ let tempstr = ""
 let pas1 = document.getElementById("p1")
 let pas2 = document.getElementById("p2")
 
+btn_clicked();
+
 function btn_clicked(){
     pasLength = document.querySelector("#pas_length_input").value;
     // console.log(pasLength)
