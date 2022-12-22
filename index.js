@@ -30,13 +30,13 @@ function toclip(a){
         navigator.clipboard.writeText(pas1.textContent);
         tempstr = pas1.textContent;
         pas1.textContent = "Copied!"
-        setTimeout(reappear(1),2000)
+        setTimeout(reappear(1),3000)
     }
     else if (a==2){
         navigator.clipboard.writeText(pas2.textContent);
         tempstr = pas2.textContent;
         pas2.textContent = "Copied!"
-        setTimeout(pas2.textContent = reappear(2),2000)
+        setTimeout(pas2.textContent = reappear(2),3000)
     }
     alert("Copied to clipboard");
 }
